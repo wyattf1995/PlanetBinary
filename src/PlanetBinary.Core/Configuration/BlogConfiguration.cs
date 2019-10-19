@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Dapper;
 using Edi.Practice.RequestResponseModel;
 using System.Linq;
+using System.Text.Json;
 
 namespace PlanetBinary.Core.Configuration
 {
@@ -26,7 +27,21 @@ namespace PlanetBinary.Core.Configuration
 			_configuration = configuration;
 		}
 
-		public async Task<Response> SaveConfigurationsAsync<T>(T planetbinarySettings) where T : IPlanetBinarySettings
+		private void Initialize()
+		{
+			if(!HasBeenInitialized)
+			{
+				var ConfigurationDictionary = GetConfigurations();
+
+				var jsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+
+				BlogSettings = JsonSerializer.Deserialize<BlogSettings>(ConfigurationDictionary[nameof(BlogSettings)], jsonOptions);
+
+				HasBeenInitialized = true;
+			}
+		}
+
+		public async Task<Response> SaveConfigurationAsync<T>(T planetbinarySettings) where T : IPlanetBinarySettings
 		{
 			async Task<int> SetConfiguration(string key, string value)
 			{
@@ -74,7 +89,10 @@ namespace PlanetBinary.Core.Configuration
 			}
 		}
 
-
+		public void RequireRefresh()
+		{
+			HasBeenInitialized = false;
+		}
 
 	}
 }
