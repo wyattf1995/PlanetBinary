@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetBinary.Common", "Plan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetBinary.Core", "PlanetBinary.Core\PlanetBinary.Core.csproj", "{8F5B3C8A-0005-430A-85BB-21CC070BD70E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetBinary.Services", "PlanetBinary.Services\PlanetBinary.Services.csproj", "{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{8F5B3C8A-0005-430A-85BB-21CC070BD70E}.Release|x64.Build.0 = Release|Any CPU
 		{8F5B3C8A-0005-430A-85BB-21CC070BD70E}.Release|x86.ActiveCfg = Release|Any CPU
 		{8F5B3C8A-0005-430A-85BB-21CC070BD70E}.Release|x86.Build.0 = Release|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Debug|x64.Build.0 = Debug|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Debug|x86.Build.0 = Debug|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Release|x64.ActiveCfg = Release|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Release|x64.Build.0 = Release|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Release|x86.ActiveCfg = Release|Any CPU
+		{BFFFD3A8-36AB-41A5-9E6F-5D2F9C36452B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

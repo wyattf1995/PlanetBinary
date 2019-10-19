@@ -20,7 +20,7 @@ namespace PlanetBinary.Web.Controllers.BlogControllers
 		protected string GetPostUrl(LinkGenerator linkGenerator, DateTime publishDate, string postSlug)
 		{
 			var link = linkGenerator.GetUriByAction(HttpContext, action: "Slug", controller: "Post",
-				values = new
+				values: new
 				{
 					year = publishDate.Year,
 					month = publishDate.Month,
