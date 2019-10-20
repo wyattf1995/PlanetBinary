@@ -22,7 +22,7 @@ namespace PlanetBinary.Services
 			if (null != logger) Logger = logger;
 		}
 
-		public Response TryExecute(Func<Response> func, [CallerMemberName] string callerMemberName = "", object keyParameter = null)
+		public Response TryTExecute(Func<Response> func, [CallerMemberName] string callerMemberName = "", object keyParameter = null)
 		{
 			try
 			{
@@ -34,7 +34,7 @@ namespace PlanetBinary.Services
 				throw;
 			}
 		}
-		public Response<T> TryExecute<T>(Func<Response<T>> func, [CallerMemberName] string callerMemberName = "", object keyParameter = null)
+		public Response<T> TryToExecute<T>(Func<Response<T>> func, [CallerMemberName] string callerMemberName = "", object keyParameter = null)
 		{
 			try
 			{
@@ -46,7 +46,7 @@ namespace PlanetBinary.Services
 				throw;
 			}
 		}
-		public async Task<Response> TryExecuteAsync(Func<Task<Response>> func, [CallerMemberName] string callerMemberName = "", object keyParameter = null)
+		public async Task<Response> TryToExecuteAsync(Func<Task<Response>> func, [CallerMemberName] string callerMemberName = "", object keyParameter = null)
 		{
 			try
 			{
@@ -58,7 +58,7 @@ namespace PlanetBinary.Services
 				throw;
 			}
 		}
-		public async Task<Response<T>> TryExecuteAsync<T>(Func<Task<Response<T>>> func,
+		public async Task<Response<T>> TryToExecuteAsync<T>(Func<Task<Response<T>>> func,
 			[CallerMemberName] string callerMemberName = "", object keyParameter = null)
 		{
 			try

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PlanetBinary.Web.Controllers.BlogControllers
 {
-    public class PostController : Controller
+    public class BlogPostController : Controller
     {
 
 

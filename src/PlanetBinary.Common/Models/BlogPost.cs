@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PlanetBinary.Common.Models
 {
-	class Post
+	public class BlogPost
 	{
 		public Guid Id { get; set; }
 		public string Title { get; set; }
