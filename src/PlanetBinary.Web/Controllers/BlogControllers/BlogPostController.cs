@@ -8,6 +8,7 @@ namespace PlanetBinary.Web.Controllers.BlogControllers
 {
     public class BlogPostController : Controller
     {
+		private readonly BlogPostService _BlogPostService;
 
 
 		[Route ("Blog")]

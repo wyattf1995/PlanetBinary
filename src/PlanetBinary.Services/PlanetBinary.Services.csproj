@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PlanetBinary.Common\PlanetBinary.Common.csproj" />
+    <ProjectReference Include="..\PlanetBinary.Data\PlanetBinary.Data.csproj" />
   </ItemGroup>
 
 </Project>
